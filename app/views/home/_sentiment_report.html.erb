@@ -1,0 +1,25 @@
+<table class="table table-sm table-dark">
+  <tbody>
+    <tr class="<%= polarity_css_class(@analysis[:polarity]) %>">
+      <td>polarity</td>
+      <td><%= @analysis[:polarity] %></td>
+    </tr>
+    <tr class="p-3 mb-2 bg-info">
+      <td>subjectivity</td>
+      <td><%= @analysis[:subjectivity] %></td>
+    </tr>
+    <tr class="p-3 mb-2 bg-info">
+      <td>text</td>
+      <td><%= @analysis[:text] %></td>
+    </tr>
+    <tr class="p-3 mb-2 bg-info">
+      <td>polarity_confidence</td>
+      <td><%= @analysis[:polarity_confidence] %></td>
+    </tr>
+    <tr class="p-3 mb-2 bg-info">
+      <td>subjectivity_confidence</td>
+      <td><%= @analysis[:subjectivity_confidence] %></td>
+    </tr>
+
+  </tbody>
+</table>

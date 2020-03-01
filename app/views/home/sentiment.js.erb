@@ -1,1 +1,1 @@
-$("#sentiment").html("<%= @analysis %>");
+$("#sentiment").html("<%= escape_javascript render(partial: 'home/sentiment_report', locals: { analysis: @analysis }) %>");

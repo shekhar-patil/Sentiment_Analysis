@@ -1,7 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.email-box {
-  align-items: center;
+.main {
+  margin-top: 100px;
+  width: 70%;
+}
+
+#sentiment {
+  margin-top: 30px;
   width: 70%;
 }

@@ -1,8 +1,14 @@
-<%= form_for :email, url: 'home/sentiment', remote: true do |form| %>
+<center>
+<div class="main">
+<h3>Enter sentense to check its sentiment</h3>
+<%= form_for :email, url: 'home/sentiment', class: 'form-group', remote: true do |form| %>
   <div class="form-group">
     <%= form.text_area :email_text, class:"form-control email-box"%>
   </div>
-  <%= form.submit 'Get Sentiment', class: 'btn primary' %>
+  <%= form.submit 'Get Sentiment', class: 'btn btn-primary' %>
 <% end  %>
 <div id="sentiment">
 </div>
+</div>
+</center>
+
